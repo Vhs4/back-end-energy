@@ -9,7 +9,7 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "node prisma/seed.js",
-    "vercel-build": "npx prisma generate && npm prisma:seed"
+    "vercel-build": "npx prisma generate && node prisma/seed.js"
   },
   "dependencies": {
     "@prisma/client": "^5.12.1",
