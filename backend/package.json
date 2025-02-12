@@ -16,6 +16,7 @@
     "cors": "2.8.5",
     "energy-suppliers-backend": "file:",
     "energy-suppliers-bff": "file:",
+    "mime-db": "^1.52.0",
     "express": "5.0.1"
   },
   "devDependencies": {
