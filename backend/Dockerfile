@@ -12,6 +12,8 @@ COPY . .
 
 # Generate Prisma client
 RUN npx prisma generate
+RUN npx prisma migrate dev
+RUN npm run prisma:seed
 
 EXPOSE 3001
 
