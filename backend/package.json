@@ -8,10 +8,11 @@
     "dev": "nodemon src/index.js",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:seed": "node prisma/seed.js"
+    "prisma:seed": "node prisma/seed.js",
+    "vercel-build": "npx prisma generate && npx prisma migrate deploy && npx prisma:seed"
   },
   "dependencies": {
-    "@prisma/client": "6.3.1",
+    "@prisma/client": "^5.12.1",
     "cors": "2.8.5",
     "energy-suppliers-backend": "file:",
     "energy-suppliers-bff": "file:",
@@ -19,6 +20,6 @@
   },
   "devDependencies": {
     "nodemon": "3.1.9",
-    "prisma": "6.3.1"
+    "prisma": "^5.12.1"
   }
 }
